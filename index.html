@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>trackster</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script type="text/javascript" src="./resources/js/trackster.js"></script>
+  <script type="text/javascript" src="./resources/js/tests.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row align-middle" id="headerBar">
+      <header class="col-sm-7 col-sm-offset-1 col-xs-6">
+        <p class="" id="titleText">trackster</p>
+      </header>
+      <div class="row col-sm-2 col-xs-4 header-search">
+        <input type="search" id="searchMusic" placeholder="Search Songs">
+      </div>
+      <div class="row col-sm-1 col-xs-2 header-search">
+        <button type="button" class="btn btn-default btn-lg" id="search"><i class="fas fa-search fa-lg"></i></button>
+      </div>
+    </div>
+
+    <div class="row col-sm-12" id="column-headers">
+      <p class="col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-1 column-title" id="song-header">Song</p>
+      <p class="col-sm-2 col-xs-4 column-title" id="artist">Artist</p>
+      <p class="col-sm-2 col-xs-2 column-title" id="album-art">Album Art</p>
+      <p class="col-sm-2 col-xs-4 column-title" id="listeners">Listeners</p>
+    </div>
+    <div class="row col-sm-12 results">
+      <div class="container" id="track-list">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
